@@ -1,0 +1,741 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(/assets/font/Inter/static/Inter-Regular.ttf);
+}
+
+/* Navbar Content */
+.navbar {
+    background-color: #37517E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-left: 15%;
+}
+
+/* Logo-title */
+.logo-title {
+    color: #fff;
+    gap: -5px;
+}
+
+.logo-title-1 {
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.logo-title-2 {
+    font-size: 12px;
+    letter-spacing: 8px;
+    margin-top: -5px;
+}
+
+/* Navbar Menu */
+.navbar-menu {
+    display: flex;
+    list-style-type: none;
+    gap: 24px;
+    padding-right: 16px;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Right Navbar */
+.right-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15%;
+}
+
+/* Button Join Sekarang */
+.btn-join>button {
+    background-color: transparent;
+    color: #47B2E4;
+    border: 1px solid #47B2E4;
+    border-radius: 24px;
+    padding: 10px 20px;
+}
+
+/* Header Section */
+.header-section {
+    background-color: #37517E;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-wrapper-left {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    gap: 50px;
+}
+
+.header-wrapper-right {
+    width: 35%;
+    padding-left: 10%;
+}
+
+.header-wrapper-right>img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.header-title {
+    color: #fff;
+    gap: 24px;
+}
+
+.header-title>h1 {
+    font-size: 45px;
+}
+
+.header-title>p {
+    font-size: 22px;
+    padding-top: 24px;
+}
+
+.header-btn {
+    display: flex;
+    gap: 24px;
+}
+
+.header-btn>button {
+    background-color: #47B2E4;
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    padding: 10px 20px;
+}
+
+.btn-play-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-play-video>button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+/* Certification Content */
+.certification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    background-color: #F3F5FA;
+    height: 100px;
+}
+
+/* Tentang Kami */
+.tentang-kami-container {
+    height: 400px;
+}
+
+.title-content {
+    text-align: center;
+}
+
+.article-container {
+    display: flex;
+    gap: 24px;
+    margin-top: 48px;
+    color: #4F4F4F;
+}
+
+.title-content>h2 {
+    font-size: 32px;
+    color: #37517E;
+}
+
+.left-article {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: justify;
+    margin-left: 15%;
+}
+
+.benefit-list {
+    margin-left: 24px;
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+.benefit-list li::before {
+    content: "\2713";
+    color: #47B2E4;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.right-article {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: justify;
+    margin-right: 15%;
+    gap: 48px;
+}
+
+.right-article>button {
+    background-color: transparent;
+    color: #47B2E4;
+    border: 1px solid #47B2E4;
+    border-radius: 24px;
+    width: 35%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Business Plan Section */
+.business-section {
+    background-color: #F3F5FA;
+    width: 100%;
+    height: 800px;
+}
+
+.business-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 10%;
+}
+
+.business-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.business-left>p {
+    font-size: 24px;
+    color: #37517E;
+    margin-bottom: 5%;
+}
+
+.card-text-business {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.text-business-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 80%;
+    padding-right: 5px;
+}
+
+.business-text {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.business-wrapper-right>img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.business-wrapper-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    margin-top: 5%;
+}
+
+.card-business {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 200px;
+    gap: 10px;
+    padding: 24px;
+    box-shadow: 1px 1px 20px 1px #37517E;
+    color: #37517E;
+}
+
+.card-business>img {
+    position: relative;
+    width: 10%;
+}
+
+/* Produk Kami Section */
+.text-content {
+    color: #4F4F4F;
+    font-weight: 500;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 18px;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+.menu-content button {
+    background-color: transparent;
+    color: #47B2E4;
+    border: 1px solid #47B2E4;
+    border-radius: 24px;
+    padding: 10px 20px;
+    width: 5%;
+    margin-top: 24px;
+}
+
+/* Grid Photo Produk Kami */
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.grid-container>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container>div>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 48px;
+    margin-bottom: 5%;
+}
+
+#photo1 {
+    grid-column: 1 / span 2;
+}
+
+#photo2 {
+    grid-column: 3 / span 2;
+}
+
+#photo3 {
+    grid-column: 5 / span 2;
+    grid-row: 1 / span 2;
+}
+
+#photo4 {
+    grid-column: 1 / span 2;
+}
+
+#photo5 {
+    grid-column: 3 / span 2;
+    grid-row: 2 / span 2;
+}
+
+#photo6 {
+    grid-column: 1 / span 2;
+}
+
+#photo7 {
+    grid-column: 5 / span 2;
+    grid-row: 3;
+}
+
+/* Peluang Bisnis Section */
+.peluang-bisnis-container {
+    background-color: #F3F5FA;
+}
+
+.title-content>h2 {
+    padding-top: 48px;
+}
+
+.card-pb-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 48px;
+}
+
+.card-pb-wrapper {
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 1px 1px 20px 1px #37517E;
+}
+
+.card-pb-wrapper>div>h3 {
+    color: #37517E;
+    border-bottom: 2px solid #37517E;
+    padding-bottom: 5px;
+    width: 80%;
+    margin-bottom: 16px;
+    font-size: 18px;
+}
+
+.card-pb-wrapper>div>p {
+    color: #4F4F4F;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.below-card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    gap: 15%;
+}
+
+.below-card-wrapper>div>h3 {
+    color: #37517E;
+    margin-bottom: 24px;
+}
+
+.below-card-wrapper>div>p {
+    color: #4F4F4F;
+    text-align: justify;
+}
+
+/* Paket Join Section */
+.card-plan-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 48px;
+    width: 100%;
+    height: 100%;
+}
+
+.card-plan-wrapper {
+    background-color: #fff;
+    box-shadow: 1px 1px 20px 1px #37517E;
+    padding: 20px 100px 20px 10px;
+    margin-bottom: 5%;
+}
+
+.card-plan-wrapper>div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-plan-wrapper>div>h3 {
+    color: #37517E;
+}
+
+.card-plan-wrapper>div>h4 {
+    color: #37517E;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.card-plan-wrapper>div>p {
+    color: #47B2E4;
+}
+
+.card-list-plan {
+    margin-top: 48px;
+}
+
+.card-list-plan>ul {
+    margin-left: 20px;
+    list-style-type: none;
+}
+
+.card-list-plan>ul>li::before {
+    content: "\2713";
+    color: #47B2E4;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.card-list-plan>button {
+    background-color: #47B2E4;
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    padding: 10px 20px;
+    margin-top: 30%;
+    margin-bottom: 10%;
+    width: 50%;
+}
+
+/* Pertanyaan Section */
+.pertanyaan-container {
+    background-color: #F3F5FA;
+}
+
+.box-question-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 48px;
+    padding-bottom: 5%;
+}
+
+.box-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    width: 50%;
+    padding: 10px;
+}
+
+/* KONTAK SECTION */
+.contact-container-left {
+    border-bottom: 10px solid #47B2E4;
+    border-top: 10px solid #47B2E4;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px 1px #37517E;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 48px;
+}
+
+.contact-wrapper-left {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.contact-wrapper-left>div>img {
+    background-color: #F3F5FA;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.text-contact-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-contact-wrapper>h3 {
+    color: #37517E;
+}
+
+.text-contact-wrapper>p {
+    color: #47B2E4;
+}
+
+.contact-container-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+}
+
+.contact-container-right {
+    border-bottom: 10px solid #47B2E4;
+    border-top: 10px solid #47B2E4;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px 1px #37517E;
+    width: 100%;
+    height: 730px;
+}
+
+.contact-wrapper-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 48px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input>input {
+    width: 100%;
+    height: 40px;
+}
+
+.wrapper-1 {
+    display: flex;
+    gap: 15%;
+}
+
+.wrapper-2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.wrapper-2>input {
+    height: 40px;
+}
+
+.wrapper-3 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.btn-pesan>button {
+    background-color: #47B2E4;
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    padding: 10px 20px;
+    width: 50%;
+}
+
+.btn-pesan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30%;
+}
+
+/* Bergabung dengan kami section */
+.join-us-container {
+    background-color: #F3F5FA;
+    margin-top: 5%;
+    padding-bottom: 24px;
+}
+
+/* Footer */
+.footer-container {
+    display: flex;
+    gap: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+}
+
+.footer-wrapper-1 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 20%;
+}
+
+.logo-2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-title-footer {
+    color: #37517E;
+    gap: -5px;
+}
+
+.logo-title-1-footer {
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.logo-title-2-footer {
+    font-size: 12px;
+    letter-spacing: 8px;
+    margin-top: -5px;
+}
+
+.footer-wrapper-2 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.footer-wrapper-2>h4 {
+    color: #37517E;
+    margin-bottom: 5%;
+}
+
+.footer-wrapper-2>ul {
+    margin-left: 10%;
+    list-style-type: none;
+}
+
+.footer-wrapper-2>ul>li::before {
+    content: "\2023";
+    margin-right: 5%;
+    color: #47B2E4;
+    font-weight: bold;
+}
+
+.footer-wrapper-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+.social-group {
+    display: flex;
+    gap: 5%;
+}
+
+.footer-wrapper-3>h4 {
+    color: #37517E;
+}
+
+/*Box Footer*/
+.box-footer {
+    background-color: #37517E;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+.box-footer>p {
+    color: #fff;
+}
