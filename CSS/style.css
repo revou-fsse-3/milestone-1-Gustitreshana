@@ -14,7 +14,7 @@ body {
 
 /* Humbuerger button */
 .toggle-btn {
-     display: none;
+    display: none;
 }
 
 /* Navbar Content */
@@ -300,6 +300,7 @@ body {
     width: 80%;
     margin: 24px auto;
     text-align: justify;
+}
 
 .menu-content {
     display: flex;
@@ -1305,7 +1306,7 @@ body {
         padding-bottom: 24px;
     }
 
-    /* FOOTER SECTION */
+    /* FOOTER SECTION. */
     .footer-container {
         font-size: 14px;
         flex-direction: column;
