@@ -5,11 +5,12 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter";
+    scroll-behavior: smooth;
 }
 
 @font-face {
     font-family: "Inter";
-    src: url(/assets/font/Inter/static/Inter-Regular.ttf);
+    src: url(assets/font/Inter/static/Inter-Regular.ttf);
 }
 
 /* Humbuerger button */
@@ -62,6 +63,12 @@ body {
     font-size: 18px;
 }
 
+.navbar-menu>li:hover {
+    cursor: pointer;
+    border-radius: 10px;
+    color: #47B2E4;
+}
+
 /* Right Navbar */
 .right-navbar {
     display: flex;
@@ -76,6 +83,14 @@ body {
     border: 1px solid #47B2E4;
     border-radius: 24px;
     padding: 10px 20px;
+    transition: all .5s ease-in-out;
+}
+
+.btn-join>button:hover {
+    cursor: pointer;
+    background-color: #47B2E4;
+    color: #fff;
+    transition: all .5s ease-in-out;
 }
 
 /* Header Section */
@@ -129,6 +144,14 @@ body {
     border: none;
     border-radius: 24px;
     padding: 10px 20px;
+    transition: all .5s ease-in-out;
+}
+
+.header-btn>button:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #47B2E4;
+    transition: all .5s ease-in-out;
 }
 
 .btn-play-video {
@@ -142,6 +165,29 @@ body {
     background-color: transparent;
     border: none;
     color: #fff;
+    animation: big 2s infinite;
+}
+
+.btn-play-video>button:hover {
+    cursor: pointer;
+}
+
+@keyframes big {
+    0% {
+        font-size: 16px;
+        letter-spacing: 0px;
+        color: #F3F5FA;
+    }
+    50% {
+        font-size: 18px;
+        letter-spacing: 2px;
+        color: #47B2E4;
+    }
+    100% {
+        font-size: 16px;
+        letter-spacing: 0px;
+        color: #fff;
+    }
 }
 
 /* Certification Content */
@@ -212,6 +258,14 @@ body {
     width: 35%;
     padding: 10px;
     border-radius: 10px;
+    transition: all .5s ease-in-out;
+}
+
+.right-article>button:hover {
+    background-color: #47B2E4;
+    color: #fff;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
 }
 
 /* Business Plan Section */
@@ -317,6 +371,14 @@ body {
     border-radius: 24px;
     padding: 10px 20px;
     width: 92px;
+    transition: all .5s ease-in-out;
+}
+
+.menu-content button:hover {
+    background-color: #47B2E4;
+    color: #fff;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
 }
 
 /* Grid Photo Produk Kami */
@@ -511,6 +573,15 @@ body {
     border-radius: 24px;
     padding: 10px 20px;
     margin-top: 48px;
+    transition: all .5s ease-in-out;
+}
+
+.card-list-plan>button:hover {
+    background-color: #fff;
+    color: #47B2E4;
+    border: 1px solid #47B2E4;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
 }
 
 /* Pertanyaan Section */
@@ -658,6 +729,15 @@ body {
     border-radius: 24px;
     padding: 10px 20px;
     width: 50%;
+    transition: all .5s ease-in-out;
+}
+
+.btn-pesan>button:hover {
+    background-color: #fff;
+    color: #47B2E4;
+    border: 1px solid #47B2E4;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
 }
 
 .btn-pesan {
