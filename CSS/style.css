@@ -553,7 +553,7 @@ body {
     border-bottom: 10px solid #47B2E4;
     border-top: 10px solid #47B2E4;
     border-radius: 10px;
-    box-shadow: 1px 1px 20px 1px #37517E;
+    box-shadow: 1px 1px 20px 1px #ccc;
     display: flex;
     flex-direction: column;
     gap: 48px;
@@ -608,7 +608,7 @@ body {
     border-bottom: 10px solid #47B2E4;
     border-top: 10px solid #47B2E4;
     border-radius: 10px;
-    box-shadow: 1px 1px 20px 1px #37517E;
+    box-shadow: 1px 1px 20px 1px #ccc;
     width: calc(100% / 2);
     height: auto;
 }
