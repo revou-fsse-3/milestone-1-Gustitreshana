@@ -101,7 +101,7 @@ body {
 .header-wrapper-right>img {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .header-title {
@@ -164,12 +164,12 @@ body {
 }
 
 .article-container {
-    display: flex;
-    gap: 24px;
-    margin-top: 48px;
-    color: #4F4F4F;
-    margin-bottom: 24px;
-}
+        display: flex;
+        gap: 24px;
+        color: #4F4F4F;
+        margin: 24px auto;
+        width: 80%;
+    }
 
 .title-content>h2 {
     font-size: 32px;
@@ -179,9 +179,8 @@ body {
 .left-article {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     text-align: justify;
-    margin-left: 15%;
 }
 
 .benefit-list {
@@ -200,9 +199,8 @@ body {
 .right-article {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     text-align: justify;
-    margin-right: 15%;
     gap: 48px;
 }
 
@@ -220,7 +218,7 @@ body {
 .business-section {
     background-color: #F3F5FA;
     width: 100%;
-    height: 800px;
+    height: auto;
 }
 
 .business-container {
@@ -268,12 +266,13 @@ body {
 }
 
 .business-wrapper-card {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: 24px;
-    margin-top: 5%;
-}
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        gap: 24px;
+        margin: 24px auto;
+        padding-bottom: 24px;
+    }
 
 .card-business {
     background-color: #fff;
@@ -300,7 +299,7 @@ body {
     text-align: center;
     width: 80%;
     margin: 24px auto;
-}
+    text-align: justify;
 
 .menu-content {
     display: flex;
@@ -593,7 +592,6 @@ body {
     justify-content: center;
     align-items: stretch;
     gap: 48px;
-    margin-top: 48px;
     max-width: 1200px;
     margin: 48px auto;
 }
@@ -819,5 +817,532 @@ body {
     /* Paket Join Section */
     .card-list-plan>ul {
         font-size: 14px;
+    }
+}
+
+/* Responsive SMALL DESKTOP */
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+    /* Header and Navbar */
+    .navbar {
+        padding: 0 24px;
+    }
+    .navbar-menu {
+        font-size: 12px;
+    }
+    .btn-join>button {
+        padding: 5px 10px;
+    }
+    .header-container {
+        padding: 0 24px;
+    }
+    .header-title>h1 {
+        font-size: 30px;
+    }
+    .header-title>p {
+        font-size: 16px;
+        padding-top: 24px;
+    }
+    .header-wrapper-left {
+        width: 100%;
+        height: auto;
+    }
+    .header-title>p {
+        font-size: 16px;
+        padding-top: 12px;
+    }
+    .header-wrapper-right {
+        width: 100%;
+        height: auto;
+    }
+    
+    /* TENTANG KAMI */
+    .article-container {
+        margin: 24px auto;
+    }
+    .right-article>button {
+        width: 100%;
+    }
+
+    /* BISNIS SECTION */
+    .business-left {
+        width: 80%;
+    }
+    .business-left>p {
+        font-size: 24px;
+    }
+    .text-business-wrapper {
+        width: 100%;
+        font-size: 14px;
+    }
+    .card-business {
+        padding: 12px;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    /* PELUANG BISNIS SECTION */
+    .card-pb-wrapper {
+        flex-direction: column;
+    }
+    .card-pb-wrapper>div>h3 {
+        text-align: center;
+        width: 100%;
+    }
+    .below-card-wrapper {
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 24px;
+    }
+    .card-plan-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-plan-wrapper {
+        width: calc(100% / 2);
+    }
+
+    /* PERTANYAAN SECTION */
+    .box-question {
+        width: 80%;
+    }
+
+    /* KONTAK SECTION */
+    .contact-wrapper-left {
+        font-size: 14px;
+    }
+    .contact-wrapper-right {
+        font-size: 14px;
+    }
+
+    /* FOOTER SECTION */
+    .footer-container {
+        font-size: 14px;
+    }
+    .box-footer {
+        font-size: 12px;
+    }
+}
+
+/* Responsive TABLET */
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    /* Header and Navbar */
+    .header-section {
+        padding: 0 12px;
+    }
+    .navbar {
+        justify-content: space-between;
+        padding: 0 24px;
+    }
+    .right-navbar {
+        display: none;
+    }
+    .toggle-btn {
+        display: block;
+    }
+    .toggle-btn {
+        display: flex;
+    }
+
+    .hamburger {
+        display: inline-block;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 15px;
+        margin: 8px;
+        transition: .5s;
+    }
+
+    .change .bar1 {
+        transform: translate(0, 11px) rotate(-45deg);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        transform: translate(0, -11px) rotate(45deg);
+    }
+    .header-container {
+        flex-direction: column-reverse;
+    }
+    .header-title>h1 {
+        font-size: 24px;
+    }
+    .header-title>p {
+        font-size: 16px;
+        padding-top: 8px;
+    }
+    .header-wrapper-left {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding-bottom: 24px;
+    }
+    .certification{
+        padding: 0 12px;
+    }
+    .certification>img {
+        width: 20%;
+    }
+
+    /* TENTANG KAMI SECTION*/
+    .right-article>button {
+        width: 100%;
+    }
+    .article-container {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin: 24px auto;
+    }
+    .business-container {
+        flex-direction: column-reverse;
+    }
+    .business-left {
+        width: 90%;
+    }
+    .text-business-wrapper {
+        width: 100%;
+    }
+    .business-wrapper-card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-business {
+        width: 80%;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* PELUANG BISNIS SECTION */
+    .card-pb-container {
+        gap: 20px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+    .card-pb-wrapper {
+        flex-direction: column;
+    }
+    .card-pb-wrapper>div>h3 {
+        width: 100%;
+        text-align: center;
+    }
+    .below-card-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 24px;
+    }
+
+    /* PRODUK KAMI SECTION */
+    .produk-kami {
+        padding: 0 12px;
+    }
+
+    /* PAKET JOIN */
+    .card-plan-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-plan-wrapper {
+        width: calc(100% / 1 );
+    }
+
+    /* PERTANYAAN SECTION */
+    .box-question {
+        width: 80%;
+    }
+
+    /* KONTAK SECTION */
+    .contact-container-left {
+        font-size: 14px;
+        width: calc(100% / 1);
+    }
+    .contact-container-right {
+        width: calc(100% / 1);
+    }
+    .contact-wrapper-right {
+        font-size: 14px;
+        width: 100%;
+    }
+    .contact-container-main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-pesan {
+        padding-bottom: 24px;
+    }
+
+    /* FOOTER SECTION */
+    .footer-container {
+        font-size: 14px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo-2 {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+    }
+    .footer-wrapper-1 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+        text-align: center;
+    }
+    .footer-wrapper-2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin: 24px auto;
+    }
+    .footer-wrapper-3 {
+        align-items: center;
+        gap: 10px;
+    }
+    .social-group {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: relative;
+    }
+    .box-footer {
+        font-size: 12px;
+    }
+}
+
+/* Responsive MOBILE */
+@media only screen and (max-width: 426px) {
+    /* Header and Navbar */
+    .header-section {
+        padding: 0 12px;
+    }
+    .navbar {
+        justify-content: space-between;
+        padding: 0 24px;
+    }
+    .right-navbar {
+        display: none;
+    }
+    .toggle-btn {
+        display: block;
+    }
+    .toggle-btn {
+        display: flex;
+    }
+
+    .hamburger {
+        display: inline-block;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 15px;
+        margin: 8px;
+        transition: .5s;
+    }
+
+    .change .bar1 {
+        transform: translate(0, 11px) rotate(-45deg);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        transform: translate(0, -11px) rotate(45deg);
+    }
+    .header-container {
+        flex-direction: column-reverse;
+    }
+    .header-title>h1 {
+        font-size: 24px;
+    }
+    .header-title>p {
+        font-size: 16px;
+        padding-top: 8px;
+    }
+    .header-wrapper-left {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding-bottom: 24px;
+    }
+    .certification{
+        padding: 0 12px;
+    }
+    .certification>img {
+        width: 20%;
+    }
+
+    /* TENTANG KAMI SECTION*/
+    .right-article>button {
+        width: 100%;
+    }
+    .article-container {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin: 24px auto;
+    }
+    .business-container {
+        flex-direction: column-reverse;
+    }
+    .business-left {
+        width: 90%;
+    }
+    .text-business-wrapper {
+        width: 100%;
+    }
+    .business-wrapper-card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-business {
+        width: 80%;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* PELUANG BISNIS SECTION */
+    .card-pb-container {
+        gap: 20px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+    .card-pb-wrapper {
+        flex-direction: column;
+    }
+    .card-pb-wrapper>div>h3 {
+        width: 100%;
+        text-align: center;
+    }
+    .below-card-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 24px;
+    }
+
+    /* PRODUK KAMI SECTION */
+    .produk-kami {
+        padding: 0 12px;
+    }
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 12px auto;
+    }
+
+    /* PAKET JOIN */
+    .card-plan-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-plan-wrapper {
+        width: calc(100% / 1 );
+    }
+
+    /* PERTANYAAN SECTION */
+    .box-question {
+        width: 80%;
+    }
+
+    /* KONTAK SECTION */
+    .contact-container-left {
+        font-size: 14px;
+        width: calc(100% / 1);
+    }
+    .contact-container-right {
+        width: calc(100% / 1);
+    }
+    .contact-wrapper-right {
+        font-size: 14px;
+        width: 100%;
+    }
+    .contact-container-main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-pesan {
+        padding-bottom: 24px;
+    }
+
+    /* FOOTER SECTION */
+    .footer-container {
+        font-size: 14px;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 12px;
+    }
+    .logo-2 {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+    }
+    .footer-wrapper-1 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+    .footer-wrapper-2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 24px auto;
+    }
+    .footer-wrapper-3 {
+        align-items: center;
+        gap: 10px;
+    }
+    .social-group {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: relative;
+    }
+    .box-footer {
+        font-size: 12px;
+        flex-direction: column;
+        gap: 12px;
     }
 }
