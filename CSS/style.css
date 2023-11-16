@@ -10,7 +10,7 @@ body {
 
 @font-face {
     font-family: "Inter";
-    src: url(/assets/font/Inter/static/Inter-Regular.ttf);
+    src: url(assets/font/Inter/static/Inter-Regular.ttf);
 }
 
 /* Humbuerger button */
