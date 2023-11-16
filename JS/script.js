@@ -46,6 +46,6 @@ function checkForm() {
 // Alert dan reload page jika input nama dan email sudah diisi
 form.addEventListener("submit", function(e) {
     e.preventDefault()
-    alert("Data anda telah terkirim, kami akan segera menghubungi anda. Terimaksih!")
+    alert("Data anda telah terkirim, kami akan segera menghubungi anda. Terimakasih!")
     window.location.reload()
 })
