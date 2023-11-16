@@ -25,14 +25,14 @@
             <div class="right-navbar">
                 <div>
                     <ul class="navbar-menu">
-                        <li>Beranda</li>
-                        <li>Tentang kami</li>
-                        <li>Produk</li>
-                        <li>Peluang Bisnis</li>
+                        <li onclick="refreshWeb()">Beranda</li>
+                        <li onclick="linkEmail()">Tentang kami</li>
+                        <li onclick="sectionProduk()">Produk</li>
+                        <li onclick="sectionBisnis()">Peluang Bisnis</li>
                     </ul>
                 </div>
                 <div class="btn-join">
-                    <button>Join Sekarang</button>
+                    <button onclick="clickJoin()">Join Sekarang</button>
                 </div>
             </div>
 
@@ -58,10 +58,10 @@
                         <p>Perluas Jaringan Bisnis Dan Bangun Team Hebat Kamu Untuk Sukses Bersama</p>
                     </div>
                     <div class="header-btn">
-                        <button>Join Sekarang</button>
+                        <button onclick="clickJoin()">Join Sekarang</button>
                         <div class="btn-play-video">
                             <img src="assets/icon/Play-icon.svg" alt="Play Icon">
-                            <button>Tonton Video</button>
+                            <button onclick="linkVideo()">Tonton Video</button>
                         </div>
                     </div>
                 </div>
@@ -108,7 +108,7 @@
                             dalam kulit Anda. Bergabunglah dalam perjalanan kami untuk merayakan keindahan yang unik
                             dalam
                             diri kita masing-masing.</p>
-                        <button>Pelajari Selengkapnya</button>
+                        <button onclick="linkWA()">Pelajari Selengkapnya</button>
                     </div>
                 </div>
             </article>
@@ -180,7 +180,7 @@
         </section>
 
         <!-- Produk Kami Section -->
-        <section class="produk-kami">
+        <section class="produk-kami" id="produkZB">
             <div class="title-content">
                 <h2>PRODUK KAMI</h2>
             </div>
@@ -222,7 +222,7 @@
         </section>
 
         <!-- Peluang Bisnis Section -->
-        <section class="peluang-bisnis-container">
+        <section class="peluang-bisnis-container" id="bisnisZB">
             <div class="title-content">
                 <h2>PELUANG BISNIS</h2>
             </div>
@@ -428,7 +428,7 @@
         </section>
 
         <!-- KONTAK SECTION -->
-        <section class="kontak">
+        <section class="kontak" id="joinMember">
             <div class="title-content">
                 <h2>KONTAK</h2>
             </div>
@@ -476,7 +476,7 @@
                 </div>
 
                 <div class="contact-container-right">
-                    <form>
+                    <form id="formZB">
                         <div class="contact-wrapper-right">
                             <div class="wrapper-1">
                                 <div class="input">
@@ -500,7 +500,7 @@
                             </div>
                         </div>
                         <div class="btn-pesan">
-                            <button type="submit">Kirim Pesan</button>
+                            <button type="submit" onclick="kirimPesan()" id="btnForm">Kirim Pesan</button>
                         </div>
                     </form>
                 </div>
