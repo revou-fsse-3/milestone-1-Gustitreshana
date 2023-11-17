@@ -174,19 +174,16 @@ body {
 
 @keyframes big {
     0% {
-        font-size: 16px;
-        letter-spacing: 0px;
         color: #F3F5FA;
+        text-shadow: 1px 1px 5px #ccc;
     }
     50% {
-        font-size: 18px;
-        letter-spacing: 2px;
         color: #47B2E4;
+        text-shadow: 1px 1px 5px black;
     }
     100% {
-        font-size: 16px;
-        letter-spacing: 0px;
         color: #fff;
+        text-shadow: 1px 1px 5px #ccc;
     }
 }
 

@@ -26,6 +26,10 @@ function sectionProduk() {
 function sectionBisnis() {
     window.location.href = "#bisnisZB"
 }
+// Hamburger button
+function burger(x) {
+    x.classList.toggle("change")
+}
 
 // Function Tombol Submit Form (Kirim Pesan), Tombol tidak berfungsi jika input Nama & email belum diisi
 let form = document.getElementById("formZB")
