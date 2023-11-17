@@ -13,7 +13,7 @@ body {
     src: url(assets/font/Inter/static/Inter-Regular.ttf);
 }
 
-/* Humbuerger button */
+/* Hamburger button */
 .toggle-btn {
     display: none;
 }
@@ -110,8 +110,6 @@ body {
     width: 35%;
     gap: 50px;
 }
-
-/* .header-wrapper-right {} */
 
 .header-wrapper-right>img {
     position: relative;
