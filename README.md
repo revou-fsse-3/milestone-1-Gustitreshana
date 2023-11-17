@@ -21,6 +21,28 @@
 6. Now you can start writting code in HMTL, CSS, JS.
 
 ---
+## Explain The Design
+1. This is for example, I will explain the navbar and header design.
+![header-design](assets/image/header-design.png)
+2. This is my HMTL for the design.
+![header-html-1](assets/image/header-html-1.png)
+![header-html-2](assets/image/header-html-2.png)
+In this HTML I use several class in tag element for styling in CSS. I use tag div to wrap an element for stlying in CSS.
+3. This is my CSS for the design.
+![header-nav-css](assets/image/header-nav-css.png)
+![header-css](assets/image/header-css.png)
+On this picture above, for example I use property:
+* display: flex; to adjust position several element in container or wrapper for make them in row position or column position.
+* justify-content and align-item property is for make them in center of container or space-evenly etc.
+![header-button-css](assets/image/header-button-css.png)
+In this picture above, for example I use property:
+* cursor: pointer; This is for make cursor change to pointer when cursor hover on element like Button.
+* Transition: all .5s ease-in-out; This is for make an element have a transition like change color from blue and then when cursor hover on button, the button change color to white.
+![header-keyframe-css](assets/image/keyframe-header-css.png)
+In this picture above, for an example I use keyframes for make an animation to change color from white-blue-white like flashing on button. This is can run automaticaly without hover the cursor, It can be run infinite.
+![header-cerification-css](assets/image/header-certification-css.png)
+4. For further information about HMTL and CSS, you can visit the link https://www.w3schools.com/
+---
 ## How To Use External Font
 1. I use google font, you can open https://fonts.google.com/
 2. I use font "Inter" for my project.
