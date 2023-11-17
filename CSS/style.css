@@ -1011,9 +1011,13 @@ body {
     .navbar {
         justify-content: space-between;
         padding: 0 24px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
     }
     .right-navbar {
-        display: none;
+        display: block;
     }
     .toggle-btn {
         display: block;
@@ -1021,14 +1025,15 @@ body {
     .toggle-btn {
         display: flex;
     }
-
+    .btn-join>button {
+        display: none;
+    }
     .hamburger {
         display: inline-block;
         cursor: pointer;
         background-color: transparent;
         border: none;
     }
-
     .bar1,
     .bar2,
     .bar3 {
@@ -1039,20 +1044,36 @@ body {
         margin: 8px;
         transition: .5s;
     }
-
     .change .bar1 {
         transform: translate(0, 11px) rotate(-45deg);
     }
-
     .change .bar2 {
         opacity: 0;
     }
-
     .change .bar3 {
         transform: translate(0, -11px) rotate(45deg);
     }
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #37517E;
+        width: 100%;
+        text-align: center;
+        transition: .3s;
+        z-index: 1;
+    }
+    .nav-item {
+        margin: 16px 0;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
     .header-container {
         flex-direction: column-reverse;
+        margin-top: 70px;
     }
     .header-title>h1 {
         font-size: 24px;
@@ -1219,9 +1240,13 @@ body {
     .navbar {
         justify-content: space-between;
         padding: 0 24px;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width: 100%;
     }
     .right-navbar {
-        display: none;
+        display: block;
     }
     .toggle-btn {
         display: block;
@@ -1229,14 +1254,15 @@ body {
     .toggle-btn {
         display: flex;
     }
-
+    .btn-join>button {
+        display: none;
+    }
     .hamburger {
         display: inline-block;
         cursor: pointer;
         background-color: transparent;
         border: none;
     }
-
     .bar1,
     .bar2,
     .bar3 {
@@ -1247,20 +1273,36 @@ body {
         margin: 8px;
         transition: .5s;
     }
-
     .change .bar1 {
         transform: translate(0, 11px) rotate(-45deg);
     }
-
     .change .bar2 {
         opacity: 0;
     }
-
     .change .bar3 {
         transform: translate(0, -11px) rotate(45deg);
     }
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #37517E;
+        width: 100%;
+        text-align: center;
+        transition: .3s;
+        z-index: 1;
+    }
+    .nav-item {
+        margin: 16px 0;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
     .header-container {
         flex-direction: column-reverse;
+        margin-top: 70px;
     }
     .header-title>h1 {
         font-size: 24px;
