@@ -1,10 +1,11 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/_e9whi2b)
-
 # How To Set Up & Run The Project
+
 ---
+
 ## Set Up Visual Code Studio
+
 1. Open code Visual Code Studio.
-   
+
 2. Open folder.
 ![open-folder-vs-code](assets/image/open-folder-vscode.png)
 
@@ -12,21 +13,27 @@
 ![create-file-folder](assets/image/create-new-file-folder.png)
 
 4. Connect file style.css to HTML.
-```
+
+```HTML
 <link rel="stylesheet" href="CSS/style.css">
 ```
+
 ![link-css](assets/image/link-css.png)
 
-5. Connect file script.js to HTML.
-```
+Connect file script.js to HTML.
+
+```HTML
 <script src="JS/script.js"></script>
 ```
+
 ![link-js](assets/image/link-js.png)
 
-6. Now you can start writing code in HTML, CSS, and JS.
+Now you can start writing code in HTML, CSS, and JS.
 
 ---
+
 ## Explain The Design
+
 1. This is for example, I will explain the navbar and header design.
 ![header-design](assets/image/header-design.png)
 
@@ -39,11 +46,13 @@ In this HTML I use several classes in tag elements for styling in CSS. I use tag
 ![header-nav-CSS](assets/image/header-nav-css.png)
 ![header-css](assets/image/header-css.png)
 In this picture above, for example, I use the property:
+
 * display: flex; to adjust the position of several elements in a container or wrapper to make them in row position or column position.
 * justify-content and align-item property is for making them in the center of the container or space-evenly etc.
   
 ![header-button-css](assets/image/header-button-css.png)
 In this picture above, for example, I use the property:
+
 * cursor: pointer; This is for making the cursor change to the pointer when the cursor hovers on an element like Button.
 * Transition: all .5s ease-in-out; This is to make an element have a transition like changing color from blue and then when the cursor hovers on the button, the button changes color to white.
   
@@ -51,17 +60,19 @@ In this picture above, for example, I use the property:
 In this picture above, for example, I use a keyframe to make an animation to change color from white-blue-white like flashing on the button. This can run automatically without hovering over the cursor, It can be run infinite.
 ![header-certification-css](assets/image/header-certification-css.png)
 
-4. For further information about HTML and CSS, you can visit the link https://www.w3schools.com/
+For further information about HTML and CSS, you can visit the link <https://www.w3schools.com/>
+
 ---
+
 ## How To Use External Font
 
-1. I use Google font, you can open https://fonts.google.com/
-   
+1. I use Google font, you can open <https://fonts.google.com/>
+
 2. I use the font "Inter" for my project.
 ![font-inter](assets/image/font-inter.png)
 
 3. Click Download Family.
-   
+
 4. After downloading the font, you can extract and you will see folder static.
 ![extract-font](assets/image/extract-font.png)
 
@@ -72,7 +83,8 @@ In this picture above, for example, I use a keyframe to make an animation to cha
 ![font-faces-css](assets/image/fontface-css.png)
 
 ---
-# Netlify Registration and Deployment with Cloudflare Domain Connection
+
+## Netlify Registration and Deployment with Cloudflare Domain Connection
 
 ---
 
@@ -83,13 +95,14 @@ This tutorial guides you through the process of registering on Netlify and the s
 ---
 
 ## Table of Content
-- Introduction
-- Table of content
-- Netlify Registration
-- Creating a New Project
-- Deploying Your Project
-- Connecting Netlify with Cloudflare
-- Conclusion
+
+* Introduction
+* Table of content
+* Netlify Registration
+* Creating a New Project
+* Deploying Your Project
+* Connecting Netlify with Cloudflare
+* Conclusion
 
 ---
 
@@ -97,7 +110,7 @@ This tutorial guides you through the process of registering on Netlify and the s
 
 Follow these steps to register on Netlify:
 
-1. Visit the Netlify website (https://www.netlify.com)
+1. Visit the Netlify website (<https://www.netlify.com>)
 ![Netlify-website](assets/image/web-netlify.png)
 
 2. Click the **Sign-up** button in the top right corner.
@@ -173,7 +186,4 @@ Congratulations! You have successfully registered on Netlify, deployed a site, a
 
 ---
 
-This tutorial was compiled by [Gusti Treshana Herman]. For more information and detailed guides, visit the Netlify Website (https://www.netlify.com).
-
-
-
+This tutorial was compiled by [Gusti Treshana Herman]. For more information and detailed guides, visit the Netlify Website (<https://www.netlify.com>).
