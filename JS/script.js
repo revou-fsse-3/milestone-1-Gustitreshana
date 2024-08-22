@@ -12,7 +12,7 @@ function linkWA() {
 }
 // Tombol Tentang Kami (NAVBAR)
 function linkEmail() {
-    window.location.href = "mailto:Zenitabeauty@gmail.com"
+    window.location.href = "mailto:Yundabeauty@gmail.com"
 }
 // Tombol Beranda (NAVBAR)
 function refreshWeb() {
@@ -64,5 +64,5 @@ function checkForm() {
 form.addEventListener("submit", function(e) {
     e.preventDefault()
     alert("Data anda telah terkirim, kami akan segera menghubungi anda. Terimakasih!")
-    window.location.reload()
+    window.location.reload()    
 })
